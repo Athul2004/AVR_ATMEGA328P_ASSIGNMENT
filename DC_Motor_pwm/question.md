@@ -1,0 +1,3 @@
+# Objective: Write a program to regulate the rotational speed of a DC motor by mapping an analog input signal to a Pulse Width Modulation (PWM) output.
+
+## Requirements: The system must interface a potentiometer with ADC Channel 0 and a DC motor via a motor driver connected to the OC0A pin (PORTD Pin 6). The program must configure Timer0 in Fast PWM mode to drive the motor. A dedicated function should be used to read the 10-bit analog value from the potentiometer and scale it to an 8-bit value suitable for the Output Compare Register (OCR0A). The motor speed must respond linearly to the potentiometer position, reaching maximum speed at the highest voltage input and stopping at the lowest. 
